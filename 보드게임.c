@@ -18,9 +18,11 @@
 void main(void) {
 	//플레이어의 위치(0부터 시작)
 	int position = 0;
+	//주사위
 	int dice;
 
 	srand(time(0));
+	//주사위는 1 ~ 6까지 나오게 설정
 	dice = rand() % 6 + 1;
 
 	printf("%d\n", dice);
