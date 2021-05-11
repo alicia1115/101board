@@ -50,6 +50,7 @@ void main(void)
 		if (position > 60)
 		{
 			printf("축하합니다. 화성에 도착하셨습니다");
+			break;
 		}
 	}
 }
