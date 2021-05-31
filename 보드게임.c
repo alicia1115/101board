@@ -70,6 +70,7 @@ void main(void)
 			break;
 		}
 
+		//범위를 지정해야 하는 조건에는 switch문이 불가능하다
 		if (position > 60)
 		{
 			printf("축하합니다. 목적지에 도착하셨습니다.\n");
