@@ -3,7 +3,7 @@
 *	보드게임
 *	총 40칸
 *	플레이의 속성
-*		1. 돈 : 2,000,000,000 시작
+*		1. 돈 : 20,000,000 시작
 *		2. 현재위치 : 0부터 시작
 		3. 황금열쇠
 			원하는 곳 갈수 있음
@@ -24,12 +24,12 @@ void main(void)
 	int position = 0;
 	// 주사위
 	int dice;
-	// 돈은 2억부터 시작 (좀 더 많은 숫자를 담기 위하여 long long으로 처리)
-	long long money = 200000000;
+	// 돈은 2천만부터 시작
+	int money = 20000000;
 
 	srand(time(0));
 
-	printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
+	printf("현재위치 : %d, 현재금액 : %d \n\n", position, money);
 
 	// 무한반복
 	while (1)
@@ -44,7 +44,7 @@ void main(void)
 
 		// 던진 주사위값을 현재 위치에 적용
 		position += dice;
-		printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
+		printf("현재위치 : %d, 현재금액 : %d \n\n", position, money);
 
 		// TEST CODE
 		// position = 10;
@@ -58,25 +58,25 @@ void main(void)
 			int dice_money = rand() % 6 + 1;
 			money += 100000 * dice_money;
 			printf("주사위가 %d이(가) 나와서 %d원을 획득하였습니다. \n", dice_money, 100000 * dice_money);
-			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
+			printf("현재위치 : %d, 현재금액 : %d \n\n", position, money);
 			break;
 
 		case 20:
 			printf("기부천사 - *위치 20*에 있을때 재산의 20%%를 사회에 기부합니다. \n");
-			money = (long long)(money * 0.8);
-			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
+			money = (int)(money * 0.8);
+			printf("현재위치 : %d, 현재금액 : %d \n\n", position, money);
 			break;
 
 		case 30:
 			printf("*위치 30*에 있을때, 주사위 던진만큼 더 나아갑니다.\n");
 			position += dice;
-			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
+			printf("현재위치 : %d, 현재금액 : %d \n\n", position, money);
 			break;
 
 		case 59:
 			printf("위치 59에 있을때, 처음 지점으로 돌아갑니다.\n");
 			position = 0;
-			printf("현재위치 : %d, 현재금액 : %lld \n\n", position, money);
+			printf("현재위치 : %d, 현재금액 : %d \n\n", position, money);
 			break;
 		}
 
