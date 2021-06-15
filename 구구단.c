@@ -5,13 +5,13 @@ void main(void)
 	{
 		if (dan == 4)
 		{
-			break; //바깥쪽 for문에 대한 break(단은 3까지만)
+			continue; //바깥쪽 for문에 대한 break(4단만 skip)
 		}
 		for (int i = 1; i <= 9; i++)
 		{
-			if (i == 4)
+			if (i == 5)
 			{
-				break; //안쪽 for문에 대한 break(수는 4까지만)
+				continue; //안쪽 for문에 대한 continue(수5만 skip)
 			}
 			printf("%d x %d = %d \n", dan, i, dan * i);
 		}
