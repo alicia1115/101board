@@ -6,8 +6,6 @@ void main(void)
 	printf("점수를 입력하시오 : ");
 	scanf("%d", &score);
 
-	if (score > 100 || score < 0)
-		return -1;
 	if (90 <= score && score <= 100)
 		printf("A");
 	else if (80 <= score && score < 90)
