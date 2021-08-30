@@ -1,9 +1,9 @@
-#include <stdio.h>
+О╩©#include <stdio.h>
 void main(void)
 
 {
 	int score;
-	printf("а║╪Ж╦╕ ют╥бго╫ц©ю : ");
+	printf("Л═░Л┬≤К╔╪ Л·┘К═╔М∙≤Л▀°Л≤╓ : ");
 	scanf("%d", &score);
 
 	if (90 <= score && score <= 100)
