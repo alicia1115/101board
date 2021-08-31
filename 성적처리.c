@@ -1,19 +1,54 @@
-ï»¿#include <stdio.h>
+#include <stdio.h>
+
 void main(void)
-
 {
-	int score;
-	printf("ì ìˆ˜ë¥¼ ì…ë ¥í•˜ì‹œì˜¤ : ");
-	scanf("%d", &score);
+	int c_score;
+	printf("C¾ğ¾î Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+	scanf_s("%d", &c_score);
 
-	if (90 <= score && score <= 100)
+	if (c_score >= 90 && c_score <= 100)
 		printf("A");
-	else if (80 <= score && score < 90)
+	else if (c_score >= 80)
 		printf("B");
-	else if (70 <= score && score < 80)
+	else if (c_score >= 70)
 		printf("C");
-	else if (60 <= score && score < 70)
+	else if (c_score >= 60)
 		printf("D");
 	else
 		printf("E");
+	printf("\n");
+
+	int java_score;
+	printf("ÀÚ¹Ù Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+	scanf_s("%d", &java_score);
+
+	if (java_score >= 90 && java_score <= 100)
+		printf("A");
+	else if (java_score >= 80)
+		printf("B");
+	else if (java_score >= 70)
+		printf("C");
+	else if (java_score >= 60)
+		printf("D");
+	else
+		printf("E");
+	printf("\n");
+
+	int ca_score;
+	printf("ÄÄÇ»ÅÍ±¸Á¶ Á¡¼ö¸¦ ÀÔ·ÂÇÏ½Ã¿À : ");
+	scanf_s("%d", &ca_score);
+
+	if (ca_score >= 90 && ca_score <= 100)
+		printf("A");
+	else if (ca_score >= 80)
+		printf("B");
+	else if (ca_score >= 70)
+		printf("C");
+	else if (ca_score >= 60)
+		printf("D");
+	else
+		printf("E");
+	printf("\n");
+
+	return 0;
 }
