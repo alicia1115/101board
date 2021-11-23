@@ -17,4 +17,7 @@ void main(void)
 	int* ptr = (int*)malloc(length * sizeof(int));
 
 	ptr[0] = 10, ptr[1] = 20, ptr[2] = 30, ptr[3] = 40;
+
+	//동적할당된 공간ㅇ르 해제
+	free(ptr);
 }
